@@ -1,0 +1,317 @@
+body {
+	font-family: helvetica;
+	padding:25px;
+}
+
+h1 {
+	font-weight: 100;
+	padding:10px;
+	align-content:center;
+}
+
+#cf {
+  position:relative;
+  height:281px;
+  width:900px;
+  margin:0 auto;
+}
+
+#cf img {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+@keyframes cfFadeInOut {
+0% {
+  opacity:1;
+}
+5% {
+opacity: 0.95;
+}
+10% { 
+opacity: 0.9;
+}
+15% {
+opacity: 0.85;
+}
+20% {
+opacity: 0.8;
+}
+25% {
+opacity: 0.75;
+}
+30% {
+opacity: 0.7;
+}
+35% {
+opacity: 0.65;
+}
+40% {
+	opacity: 0.60;
+}
+45% {
+opacity: 0.55;
+}
+50% {
+opacity:0.5;
+}
+55% {
+opacity: 0.45;
+}
+60% {
+opacity:0.4;
+}
+65% {
+opacity: 0.35;
+}
+70% {
+opacity: 0.3;
+}
+75% {
+opacity: 0.25;
+}
+80% {
+opacity: 0.2;
+}
+85% {
+opacity: 0.15;
+}
+90% { 
+opacity: 0.1;
+}
+95% {
+opacity: 0.05;
+}
+100% {
+opacity:0;
+}
+}
+
+#cf img.top {
+animation-name: cfFadeInOut;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-duration: 20s;
+animation-direction: alternate;
+ width: 900px;
+}
+
+#cf img.bottom {
+	width: 900px;
+}
+
+#cf img.gif {
+	width:800px;
+	align-content:center;
+}
+
+.grid {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	text-align: center;
+}
+
+.nav {
+	padding:2px;
+	font-size:10px;
+	position:absolute;
+	left:2px;
+	top:2px;
+}
+
+a {
+	color:#000000;
+	text-decoration:none;
+}
+
+a:visited {
+	color:#585858;
+}
+
+a:hover {
+	color:#000000;
+	text-transform:uppercase;
+}
+
+
+.content {
+	display: flex;
+	justify-content: center;
+}
+
+.caption {
+	font-family:Helvetica, Arial, sans-serif;
+	font-size:10px;
+	text-align:center;
+	width:250px;
+}
+
+.navbar {
+	margin: 0;
+	list-style-type: none;
+	text-align: center;
+}
+
+.navbar li {
+	display: inline-block;
+	margin:0 1em 1em 0;
+	position:relative;
+	vertical-align:middle;
+}
+
+.navbar li a {
+	color: #000000;
+	text-decoration: none;
+}
+
+.navbar li a:hover {
+	color: #000000;
+}
+
+div.text-content {
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	height:220px;
+	background-color: #000000;
+	opacity:0;
+	font-family:Helvetica, Arial, sans-serif;
+	font-size:36px;
+	color: white;
+	cursor: pointer;
+	-webkit-transition: opacity 750ms;
+	-moz-transition: opacity 750ms;
+	-o-transition: opacity 750ms;
+	transition: opacity 750ms;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	text-transform:uppercase;
+}
+
+nav.navbar li:hover div.text-content {
+	opacity: .5;
+}
+
+.lb-data .lb-number {
+	display: none !important;
+}
+
+.lb-container {
+	background-color: black;
+}
+
+.lightbox .lb-image {
+	max-width: inherit !important; /* to fix if other css having img { max-width: 100%} its affect the Auto resize of lightbox preview */
+}
+
+.scroll-pane
+{
+	width: 100%;
+	height: 600px;
+	overflow: auto;
+}
+.horizontal-only
+{
+	height: auto;
+	max-height: 800px;
+}
+
+form.search-box-fancy>fieldset input#search-phrase {
+    font-size: 1em;
+    border-left: none;
+    border-right: none;
+    display: inline-block;
+    min-width: 10rem;
+    width: 50%;
+    padding: 0 .5rem;
+    -webkit-transition: width .25s;
+    transition: width .25s;
+}
+
+form.search-box-fancy>fieldset .media-filter-label, form.search-box-fancy>fieldset input#search-phrase, form.search-box-fancy>fieldset button {
+    height: 30px !important;
+    line-height: 30px;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+
+
+
+input, textarea, select, button {
+    font-family: inherit;
+    font-weight: inherit;
+    background-color: #fff;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+fieldset {
+    display: block;
+    -webkit-margin-start: 2px;
+    -webkit-margin-end: 2px;
+    -webkit-padding-before: 0.35em;
+    -webkit-padding-start: 0.75em;
+    -webkit-padding-end: 0.75em;
+    -webkit-padding-after: 0.625em;
+    min-width: -webkit-min-content;
+    border:none;
+}
+
+* {
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+input {
+    -webkit-appearance: textfield;
+    background-color: white;
+    -webkit-rtl-ordering: logical;
+    user-select: text;
+    cursor: auto;
+    padding: 1px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+}
+user agent stylesheet
+input, textarea, keygen, select, button {
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    margin: 0em 0em 0em 0em;
+    font: 11px BlinkMacSystemFont;
+}
+user agent stylesheet
+input, textarea, keygen, select, button, meter, progress {
+    -webkit-writing-mode: horizontal-tb;
+}
+
+form.search-box-fancy>fieldset {
+    height: 30px;
+    text-align: center;
+}
+
+form.search-box-fancy {
+    left: 50%;
+    width: 100%;
+    margin: 0 auto;
+    line-height: 0;
+    height: 2.5rem;
+}
